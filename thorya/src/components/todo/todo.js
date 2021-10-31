@@ -24,7 +24,7 @@ const todo={
 this.setState({todos: [...this.state.todos,todo]});
 e.target.task.value="";
     }};
-handleDelete=(id)=>
+handleDelete=(id)=>{
 this.setState({todos:this.state.todos.filter((todo)=>todo.id!==id)});
 };
 
